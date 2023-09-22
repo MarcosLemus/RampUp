@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos Lemus Photography</title>
+    <link rel="shortcut icon" href="../media/camara-fotografica.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+        <div id="line"></div>
+        <nav>
+            <ul>
+                <li> <a href="../index.html">Home</a></li>
+                <li> <a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contactform">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="introduce name" required>
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" placeholder="surname" required>
+                <label for="tlf">Phone number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="introduce phone" required />
+                <label for="pet-select">Choose the service:</label>
+                <select name="pets" id="pet-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="landscape">Landscape</option>
+                    <option value="portrait">Portrait</option>
+                    <option value="nature">Nature</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="baptism">Baptism</option>
+                    <option value="arquitecture">Arquitecture</option>
+                </select>
+                <textarea name="suggestion" id="suggestion" placeholder="please, introduce your petition" cols="30" rows="10"></textarea>
+                <input type="submit" value="submit" />
+                <input type="reset" value="reset" />
+            </form>
+        </section>         
+    </main>
+    <footer>
+        <section id="footcontact">
+            <p><b>Contacto</b></p>
+            <address>
+                Marcos Lemus <br>
+                Tlf: 616285552 <br>
+                email: marcoslemus1990@gmail.com
+            </address>
+        </section>
+    </footer>
+</body>
+</html>

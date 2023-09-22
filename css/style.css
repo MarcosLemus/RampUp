@@ -1,0 +1,126 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#e6dacd;
+}
+
+header, main, footer{
+    text-align: center;
+}
+main{
+    height: 600px;
+}
+
+body{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+/*home*/
+
+#homecontent {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#mainpic{
+    width: 100%;
+
+}
+
+/*home*/
+
+/* nav */
+
+nav,ul,li{
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+nav > ul > li{
+    list-style:none;
+    padding: 26px 40px;
+    border-bottom: 1px solid gray;
+}
+nav > ul > li:hover{
+    background-color: #F8EDEB;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color:black;
+}
+
+/* nav */
+
+/*portfolio*/
+
+#porfolio{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#porfolio > img {
+    width: 20%;
+    padding: 20px;
+    border-radius: 30px;
+    justify-content:flex-end;
+
+}
+
+/*portfolio*/
+
+/* contact */
+
+#footcontact{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    text-align: justify;
+}
+
+address{
+    height: 200px;
+    width: 200px;
+
+}
+
+
+#contactform{
+    text-align: left;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 30%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+
+/* contact */
+
+
+/*about*/
+
+#aboutpic{
+    width: 500px;
+    border-radius: 10%;
+}
+
+/*about*/
+

@@ -3,16 +3,21 @@
     background-color:#e6dacd;
 }
 
-header, main, footer{
+header, main{
     text-align: center;
 }
 main{
-    height: 600px;
+    height: 100%;
 }
 
 body{
     margin-left: 20%;
     margin-right: 20%;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -23,11 +28,11 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 #mainpic{
     width: 100%;
+    border-radius: 20px;
 
 }
 
@@ -35,16 +40,22 @@ body{
 
 /* nav */
 
-nav,ul,li{
-    height: 100%;
+nav,ul{
+
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    padding-left: 0;
+    position: sticky;
+    top: 1px;
 }
+
+
 nav > ul > li{
     list-style:none;
     padding: 26px 40px;
     border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
 }
 nav > ul > li:hover{
     background-color: #F8EDEB;
@@ -62,7 +73,6 @@ nav > ul > li > a {
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: center;
 
 }
@@ -71,7 +81,6 @@ nav > ul > li > a {
     width: 20%;
     padding: 20px;
     border-radius: 30px;
-    justify-content:flex-end;
 
 }
 
@@ -81,10 +90,10 @@ nav > ul > li > a {
 
 #footcontact{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 200px;
-    height: 200px;
     text-align: justify;
+    padding-left: 200px;
 }
 
 address{
@@ -97,16 +106,18 @@ address{
 #contactform{
     text-align: left;
     margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    width: 30%;
+    width: 50%;
+    padding-left: 200px;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+input[type=text]:focus,input[type=tel]:focus,textarea:focus {
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -120,7 +131,100 @@ form {
 #aboutpic{
     width: 500px;
     border-radius: 10%;
+    padding: 30px;
+}
+#biography{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#textbiography{
+    text-align: justify;
 }
 
 /*about*/
 
+
+/*blog*/
+#padblog{
+    margin-top: 80px;
+}
+
+.headblog{
+    text-align: left;
+    padding-left: 200px;
+    border: 1px solid rgb(75, 75, 75);
+    width: 50%;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.viaje{
+    text-align: left;
+    padding-left: 200px;
+}
+
+.viaje > img{
+    width: 400px;
+}
+
+.viaje > video{
+    width: 400px;
+}
+
+#blogmenu > a{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+#blogmenu > a:hover{
+color: white;
+
+}
+
+#blognavigation{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*blog*/
+
+
+
+  /* back to top */
+
+  div.top{
+    position:fixed;
+    bottom:10px;
+    right: 10px;
+    background-color: rgb(212, 230, 195);
+    padding: 10px;
+    border-radius: 5px;
+    opacity:80%;
+    -webkit-box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 5px 5px 3px 5px rgba(252,213,206,0); 
+    box-shadow: 0px 3px 0px 2px rgba(0,0,0,0.1), 0px 6px 0px 4px rgba(0,0,0,0.1), 5px 5px 3px 5px rgba(252,213,206,0);
+}
+
+div.top > a{
+    text-decoration: none;
+    color:black;
+}
+
+    /* back to top */
+
+  
+
+    @media screen and (max-width: 700px) {
+        nav,ul,li {   
+          flex-direction: column;
+        }
+      }
+    
